@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rdsocial/static/css/main.dce51959.css",
+    "main.js": "/rdsocial/static/js/main.04d1701b.js",
+    "index.html": "/rdsocial/index.html",
+    "main.dce51959.css.map": "/rdsocial/static/css/main.dce51959.css.map",
+    "main.04d1701b.js.map": "/rdsocial/static/js/main.04d1701b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dce51959.css",
+    "static/js/main.04d1701b.js"
+  ]
+}
