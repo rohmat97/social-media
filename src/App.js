@@ -56,13 +56,13 @@ function App() {
           element: <Home />
         },
         {
-          path:'/social-media//profile/:id',
+          path:'/social-media/profile/:id',
           element: <Profile />
         }
       ]
     },
     {
-      path:'/social-media//login',
+      path:'/social-media/login',
       element: <Login />
     },
     {
