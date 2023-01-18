@@ -36,9 +36,9 @@ function App() {
   }
 
   const ProtectedRoute= ({children})=>{
-    if(!currentUser){
-      return <Navigate to={"/social-media/login"} />
-    }
+    // if(!currentUser){
+    //   return <Navigate to={"/social-media/login"} />
+    // }
     return children
   }
 
