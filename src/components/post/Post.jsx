@@ -20,7 +20,7 @@ function Post({ post }) {
             <img src={post.profilePic} alt="" />
             <div className="details">
               <Link
-                to={`/profile/${post.userId}`}
+                to={`/social-media/profile/${post.userId}`}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <span className="name">{post.name}</span>

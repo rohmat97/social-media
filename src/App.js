@@ -36,15 +36,15 @@ function App() {
   }
 
   const ProtectedRoute= ({children})=>{
-    // if(!currentUser){
-    //   return <Navigate to={"/login"} />
-    // }
+    if(!currentUser){
+      return <Navigate to={"/social-media/login"} />
+    }
     return children
   }
 
   const router = createBrowserRouter([
     {
-      path:'/',
+      path:'/social-media/',
       element:(
       <ProtectedRoute>
         <Layout/>
@@ -52,27 +52,29 @@ function App() {
         ),
       children: [
         {
-          path:'/',
+          path:'/social-media/',
           element: <Home />
         },
         {
-          path:'/profile/:id',
+          path:'/social-media/profile/:id',
           element: <Profile />
         }
       ]
     },
     {
-      path:'/login',
+      path:'/social-media/login',
       element: <Login />
     },
     {
-      path:'/register',
+      path:'/social-media/register',
       element: <Register />
     }
 
   ])
   return (
+    <div>
       <RouterProvider router={router} />
+    </div>
   );
 }
 
