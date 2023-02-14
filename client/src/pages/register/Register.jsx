@@ -26,7 +26,7 @@ const Register = () => {
     }
   };
 
-  console.log(err)
+  console.log(err);
 
   return (
     <div className="register">
@@ -39,7 +39,7 @@ const Register = () => {
             consequatur.
           </p>
           <span>Do you have an account?</span>
-          <Link to="/login">
+          <Link to="/social-media/login">
             <button>Login</button>
           </Link>
         </div>
