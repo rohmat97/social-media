@@ -70,11 +70,7 @@ const Update = ({ setOpenUpdate, user }) => {
               <span>Cover Picture</span>
               <div className="imgContainer">
                 <img
-                  src={
-                    cover
-                      ? URL.createObjectURL(cover)
-                      : "/upload/" + user.coverPic
-                  }
+                  src={cover ? URL.createObjectURL(cover) : user.coverPic}
                   alt=""
                 />
                 <CloudUploadIcon className="icon" />
@@ -90,11 +86,7 @@ const Update = ({ setOpenUpdate, user }) => {
               <span>Profile Picture</span>
               <div className="imgContainer">
                 <img
-                  src={
-                    profile
-                      ? URL.createObjectURL(profile)
-                      : "/upload/" + user.profilePic
-                  }
+                  src={profile ? URL.createObjectURL(profile) : user.profilePic}
                   alt=""
                 />
                 <CloudUploadIcon className="icon" />
